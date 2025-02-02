@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Kayloni H, Ziyin H, Ruiwen L</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+    <!-- link the font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="causes.html">Causes</a>
+        </li>
+        <li>
+          <a href="solutions.html">Solutions</a>
+        </li>
+        <li>
+          <a href="support.html">Support</a>
+        </li>
+      </ul>
+    </nav>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/slideshow1.png" alt="A homeless man in the subway station holding up a sign that says 'seeking human kindness'." style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/slideshow2.jpg" alt="A picture of a homeless person sleeping on a wooden bench in public." style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/slideshow3.jpg" alt="A picture of a lady giving a homeless man who is on the ground with a holiday themed blank and a cardboard sign saying'happy holidays today is my 26 bday' a drink and a sandwhich." style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+    <h1>HELP THE HOMELESS!</h1>
+    
+  <!-- Flexbox for the icons-->
+    <div class="flexboxContainer"> 
+      <div class="flexItem">
+        <img id="iconImage" src="assets/causeicon.png" alt="Cause by Adrien Coquet from NounProject.com">
+        
+          <p>We educate people on homelessness and where it all started.</p>
+          <button onclick = "window.location.href='causes.html';" id="causes">Causes</button>
+      </div>
+      
+      <div class="flexItem">
+        <img id="iconImage" src="assets/solutionicon.png" alt="Solution by verry poernomo from NounProject.com">
+          <p>We identify ways to help solve homelessness.</p>
+          <button class="iconButton" onclick = "window.location.href='solutions.html';" id="solutions">Solutions</button>
+        
+      </div>
+      <div class="flexItem">
+        <img id="iconImage" src="assets/supporticon.png" alt="An icon with three arms reaching up in support/volunteering.">
+          <p>We provide resources to aid the homeless.</p>
+          <button onclick = "window.location.href='support.html';"id="Support">Support</button>
+      </div>
+    </div>  
+      <div class='tableauPlaceholder' id='viz1656530259522' style='position: relative'><noscript><a href='https:&#47;&#47;endhomelessness.org&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Map-2021_16246275433390&#47;Regular&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Map-2021_16246275433390&#47;Regular' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Map-2021_16246275433390&#47;Regular&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656530259522');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='825px';vizElement.style.height='677px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    <p id="dataMap">From <a href="https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness-2021/">National Alliance to End Homelessness</a></p>
+
+    
+      <div class="factGenerator"> 
+        <img id="factIcon" src="assets/facticon.png" alt="Fact by Vector Valley from NounProject.com">
+          <h1 class="factTitle">FACT GENERATOR</h1>
+          <p>Learn a fact about homelessness!</p>
+		          <button id="myButton">Tell me</button>
+                <p id="fact"></p>
+      </div>
+
+    <div class="footerBox">
+      <div class="footerItem">
+        <h4>Credit to the icons above:</h3>
+        <p>
+          - Cause by Adrien Coquet from NounProject.com
+          <br>
+          - Solution by Verry Poernomo from NounProject.com
+          <br>
+          - Fact by Vector Valley from NounProject.com
+        </p>
+      </div>    
+    </div>
+  
+  </body>
+</html>
